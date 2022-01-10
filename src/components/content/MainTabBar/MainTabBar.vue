@@ -15,6 +15,11 @@
       <img slot="item-icon-active" src="~assets/img/tabbar/community_selected.png" alt="">
       <div slot="item-text">社区</div>
     </tab-bar-item>
+    <tab-bar-item path="/cart">
+      <img slot="item-icon" src="~assets/img/tabbar/cart.png" alt="">
+      <img slot="item-icon-active" src="~assets/img/tabbar/cart_selected.png" alt="">
+      <div slot="item-text">购物车</div>
+    </tab-bar-item>
     <tab-bar-item path="/profile">
       <img slot="item-icon" src="~assets/img/tabbar/center.png" alt="">
       <img slot="item-icon-active" src="~assets/img/tabbar/center_selected.png" alt="">
@@ -24,8 +29,8 @@
 </template>
 
 <script>
-import TabBar from 'components/tabbar/TabBar';
-import TabBarItem from "components/tabbar/TabBarItem";
+import TabBar from 'components/common/tabbar/TabBar';
+import TabBarItem from "components/common/tabbar/TabBarItem";
 export default {
   name: "MainTabBar",
   components: {
